@@ -28,8 +28,9 @@ public class Main {
 
             ChipsetFactory chipsetFactory = new ChipsetFactory();
             var result = chipsetFactory.produce(machinesPowers, numChipsets);
-            if (result == null) {
+            if (ChipsetFactory.EMPTY_RESPONSE.equals(result)) {
                 System.out.printf("No one variant of machines can't produce the chipsets amount: %d%n", numChipsets);
+                return;
             }
             System.out.printf("Nr solutions=%d%n", result.getUsedMachines().size());
             result.getUsedMachines().forEach(e ->
