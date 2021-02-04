@@ -2,9 +2,17 @@
 
 ## Run
 
+```
 1. Checkout the repo and use master brunch
-1. Choose Main class and push Run (required java 11 or later version)
-1. Follow steps in a terminal
+2. Choose Main class and push Run (required java 11 or later version)
+3. Follow steps in a terminal
+```
+
+Other variant you can run with gradle (should be installed)
+
+```
+./gradlew run
+```
 
 # Env
 
